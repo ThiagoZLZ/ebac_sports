@@ -22,7 +22,6 @@ function App() {
       .then((res) => res.json())
       .then((res) => setProdutos(res))
   }, [])
-  /////////////////////////////////////////////
 
   function favoritar(produto: Produto) {
     if (favoritos.find((p) => p.id === produto.id)) {
